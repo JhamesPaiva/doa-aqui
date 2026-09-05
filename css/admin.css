@@ -1,0 +1,36 @@
+.admin-section{padding:44px 0 70px;}
+  .admin-head{margin-bottom:26px;}
+  .admin-head h2{font-size:26px;}
+  .admin-head p{color:var(--ink-soft);margin:6px 0 0;}
+  .admin-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:34px;}
+  .admin-stat{background:var(--white);border:1px solid var(--line);padding:18px 20px;}
+  .admin-stat b{display:block;font-family:'Fraunces',serif;font-size:28px;color:var(--forest);}
+  .admin-stat span{font-size:12.5px;color:var(--ink-soft);}
+  .admin-panel{background:var(--white);border:1px solid var(--line);margin-bottom:26px;}
+  .admin-panel-head{
+    padding:16px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;
+  }
+  .admin-panel-head h3{font-size:16.5px;}
+  .count-badge{background:var(--brick-pale);color:var(--brick);font-size:12px;font-weight:700;padding:3px 10px;border-radius:20px;}
+  table.admin-table{width:100%;border-collapse:collapse;}
+  table.admin-table th{
+    text-align:left;font-size:11.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--ink-soft);
+    padding:12px 20px;border-bottom:1px solid var(--line);font-weight:600;
+  }
+  table.admin-table td{padding:13px 20px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:middle;}
+  table.admin-table tr:last-child td{border-bottom:none;}
+  .row-item{display:flex;align-items:center;gap:12px;}
+  .row-thumb{width:42px;height:42px;background:var(--paper-alt);flex-shrink:0;overflow:hidden;}
+  .row-thumb img{width:100%;height:100%;object-fit:cover;}
+  .row-actions{display:flex;gap:8px;}
+  .icon-btn{
+    border:1px solid var(--line);background:var(--white);padding:6px 12px;font-size:12.5px;font-weight:600;
+  }
+  .icon-btn.approve{color:var(--forest);border-color:var(--forest);}
+  .icon-btn.approve:hover{background:var(--forest);color:var(--white);}
+  .icon-btn.reject{color:var(--brick);border-color:var(--brick);}
+  .icon-btn.reject:hover{background:var(--brick);color:var(--white);}
+  select.status-select{
+    border:1px solid var(--line);padding:6px 8px;font-family:inherit;font-size:13px;background:var(--paper);
+  }
+  .empty-admin{padding:30px 20px;color:var(--ink-soft);font-size:14px;text-align:center;}

@@ -1,0 +1,3 @@
+desenhaFiltroCategoria();
+desenhaFiltroLocal();
+desenhaGrade();

@@ -1,0 +1,28 @@
+header.site{
+    background:var(--forest);
+    color:var(--white);
+    position:sticky;top:0;z-index:40;
+    border-bottom:3px solid var(--gold);
+  }
+  header.site .wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    height:72px;
+  }
+  .logo{
+    display:flex;align-items:center;gap:10px;
+    font-family:'Fraunces',serif;font-weight:700;font-size:22px;color:var(--white);
+    text-decoration:none;
+  }
+  .logo .mark{
+    width:30px;height:30px;border-radius:50%;
+    background:var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--forest);font-weight:700;font-size:16px;
+  }
+  nav.main{display:flex;align-items:center;gap:30px;}
+  nav.main a{
+    color:var(--white);text-decoration:none;font-size:15px;font-weight:500;
+    opacity:.88;padding:6px 2px;border-bottom:2px solid transparent;
+  }
+  nav.main a:hover{opacity:1;border-color:var(--gold);}
+  nav.main a.active{opacity:1;border-color:var(--gold);}
