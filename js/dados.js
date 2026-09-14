@@ -24,6 +24,20 @@ var filaModeracao = [
   {id:102, titulo:"Panelas de alumínio (kit)", categoria:"Alimentos", desc:"Kit com 4 panelas de tamanhos diferentes, uso doméstico, sem amassados.", local:"Centro", doador:"Ronaldo", contato:"(32) 99933-5566", img:imagensCategoria["Alimentos"]}
 ];
 
+var bairros = ["Centro", "São José", "Vila Nova", "Bela Vista"];
+
+var moderacaoLog = [];
+var historicoStatus = [];
+var proximoIdModeracao = 1;
+var proximoIdHistorico = 1;
+
+function dataHoje() {
+  var d = new Date();
+  var dia = String(d.getDate()).padStart(2, "0");
+  var mes = String(d.getMonth() + 1).padStart(2, "0");
+  return dia + "/" + mes;
+}
+
 var proximoId = 200;
 var telaAtual = "mural";
 var filtroAtual = {

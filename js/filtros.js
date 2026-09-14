@@ -20,13 +20,9 @@ function desenhaFiltroCategoria() {
 
 function desenhaFiltroLocal() {
   var sel = document.getElementById("location-filter");
-  var locais = [];
-  for (var i = 0; i < itens.length; i++) {
-    if (locais.indexOf(itens[i].local) === -1) locais.push(itens[i].local);
-  }
   var html = '<option value="">Todos os bairros</option>';
-  for (var j = 0; j < locais.length; j++) {
-    html += '<option value="' + locais[j] + '">' + locais[j] + '</option>';
+  for (var j = 0; j < bairros.length; j++) {
+    html += '<option value="' + bairros[j] + '">' + bairros[j] + '</option>';
   }
   sel.innerHTML = html;
 }

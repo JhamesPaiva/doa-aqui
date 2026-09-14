@@ -54,4 +54,6 @@
   .btn-forest:hover{background:var(--forest-light);}
   .btn-ghost{background:transparent;color:var(--forest);border-color:var(--line);}
   .btn-ghost:hover{border-color:var(--forest);}
+  .btn-brick{background:var(--brick);color:var(--white);}
+  .btn-brick:hover{background:#9c4527;}
   .btn-sm{padding:8px 14px;font-size:13.5px;}

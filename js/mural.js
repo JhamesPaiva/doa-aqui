@@ -1,5 +1,6 @@
 function itensFiltrados() {
   return itens.filter(function (i) {
+    if (i.removido) return false;
     var texto = (i.titulo + " " + i.desc).toLowerCase();
     if (filtroAtual.busca && texto.indexOf(filtroAtual.busca) === -1) return false;
     if (!filtroAtual.categorias.has(i.categoria)) return false;
@@ -47,6 +48,7 @@ function desenhaGrade() {
     });
   });
 
-  document.getElementById("stat-total").textContent = itens.length;
-  document.getElementById("stat-disponiveis").textContent = itens.filter(function (i) { return i.status === "Disponível"; }).length;
+  var itensAtivos = itens.filter(function (i) { return !i.removido; });
+  document.getElementById("stat-total").textContent = itensAtivos.length;
+  document.getElementById("stat-disponiveis").textContent = itensAtivos.filter(function (i) { return i.status === "Disponível"; }).length;
 }
